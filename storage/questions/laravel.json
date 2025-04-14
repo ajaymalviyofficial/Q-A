@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What command is used to create a new Laravel project?",
+        "options": ["laravel new", "composer create-project", "php artisan new", "laravel init"],
+        "answer": "composer create-project"
+    },
+    {
+        "question": "Which file contains web routes in Laravel?",
+        "options": ["routes/web.php", "web/routes.php", "app/routes/web.php", "routes.php"],
+        "answer": "routes/web.php"
+    },
+    {
+        "question": "What is the default template engine in Laravel?",
+        "options": ["Blade", "Twig", "Smarty", "Mustache"],
+        "answer": "Blade"
+    },
+    {
+        "question": "Which command creates a new controller?",
+        "options": ["php artisan make:controller", "php artisan create:controller", "php make controller", "artisan controller"],
+        "answer": "php artisan make:controller"
+    },
+    {
+        "question": "Where are Laravel migrations stored?",
+        "options": ["database/migrations", "app/migrations", "resources/migrations", "routes/migrations"],
+        "answer": "database/migrations"
+    },
+    {
+        "question": "Which method is used to define a GET route?",
+        "options": ["Route::get()", "Route::post()", "Route::put()", "Route::fetch()"],
+        "answer": "Route::get()"
+    },
+    {
+        "question": "What is the purpose of CSRF token in Laravel?",
+        "options": ["Prevent Cross-Site Request Forgery", "Encrypt passwords", "Improve SEO", "Validate routes"],
+        "answer": "Prevent Cross-Site Request Forgery"
+    },
+    {
+        "question": "How do you retrieve all data from a model?",
+        "options": ["Model::all()", "Model::get()", "Model::fetch()", "Model::data()"],
+        "answer": "Model::all()"
+    },
+    {
+        "question": "What does Eloquent ORM stand for?",
+        "options": ["Object Relational Mapping", "Open Routing Mechanism", "Optional Render Method", "Online Resource Mapping"],
+        "answer": "Object Relational Mapping"
+    },
+    {
+        "question": "Which command runs database migrations?",
+        "options": ["php artisan migrate", "php artisan run:migration", "php migrate", "php artisan db:migrate"],
+        "answer": "php artisan migrate"
+    },
+    {
+        "question": "Which file handles HTTP middleware?",
+        "options": ["app/Http/Kernel.php", "routes/web.php", "config/app.php", "app/Providers/AppServiceProvider.php"],
+        "answer": "app/Http/Kernel.php"
+    },
+    {
+        "question": "What is the purpose of `.env` file?",
+        "options": ["Store environment configuration", "Render views", "Define routes", "Load migrations"],
+        "answer": "Store environment configuration"
+    },
+    {
+        "question": "Which artisan command is used to start the server?",
+        "options": ["php artisan serve", "php serve", "php start", "php artisan server"],
+        "answer": "php artisan serve"
+    },
+    {
+        "question": "Which directory contains Laravel models by default?",
+        "options": ["app/Models", "resources/models", "database/models", "routes/models"],
+        "answer": "app/Models"
+    },
+    {
+        "question": "What helper is used to generate URLs in Blade?",
+        "options": ["url()", "route()", "href()", "link()"],
+        "answer": "url()"
+    },
+    {
+        "question": "How do you redirect in a controller?",
+        "options": ["return redirect('/path')", "redirect to('/path')", "Route::redirect()", "goto('/path')"],
+        "answer": "return redirect('/path')"
+    },
+    {
+        "question": "How do you validate form input in a controller?",
+        "options": ["$request->validate()", "validate($request)", "Form::validate()", "$request->check()"],
+        "answer": "$request->validate()"
+    },
+    {
+        "question": "How do you include a layout in Blade?",
+        "options": ["@extends", "@layout", "@template", "@includeLayout"],
+        "answer": "@extends"
+    },
+    {
+        "question": "Which method is used to seed data into database?",
+        "options": ["php artisan db:seed", "php artisan seed:run", "php db:seed", "php artisan run:seeder"],
+        "answer": "php artisan db:seed"
+    },
+    {
+        "question": "Which command is used to clear Laravel cache?",
+        "options": ["php artisan cache:clear", "php artisan clear:cache", "php cache:flush", "php clear cache"],
+        "answer": "php artisan cache:clear"
+    }
+]

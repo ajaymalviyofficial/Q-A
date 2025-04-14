@@ -1,0 +1,103 @@
+[
+    {
+      "question": "What is Flutter?",
+      "options": ["A web server", "A mobile SDK by Google", "A database", "An image editor"],
+      "answer": "A mobile SDK by Google"
+    },
+    {
+      "question": "Which language is used to write Flutter apps?",
+      "options": ["Java", "Kotlin", "Dart", "Swift"],
+      "answer": "Dart"
+    },
+    {
+      "question": "What is a widget in Flutter?",
+      "options": ["A plugin", "A building block of UI", "A database object", "A function"],
+      "answer": "A building block of UI"
+    },
+    {
+      "question": "Which method is used to update UI in Flutter?",
+      "options": ["setState()", "updateUI()", "refresh()", "buildUI()"],
+      "answer": "setState()"
+    },
+    {
+      "question": "What is the parent widget of all widgets in Flutter?",
+      "options": ["MaterialApp", "WidgetsApp", "StatelessWidget", "Container"],
+      "answer": "MaterialApp"
+    },
+    {
+      "question": "Which widget is used to layout children vertically?",
+      "options": ["Row", "Column", "Stack", "Wrap"],
+      "answer": "Column"
+    },
+    {
+      "question": "What is hot reload in Flutter?",
+      "options": ["Server refresh", "Code auto-completion", "Instant UI updates on code change", "App optimization"],
+      "answer": "Instant UI updates on code change"
+    },
+    {
+      "question": "Which company developed Flutter?",
+      "options": ["Facebook", "Microsoft", "Google", "Amazon"],
+      "answer": "Google"
+    },
+    {
+      "question": "What is the purpose of the `build()` method in Flutter?",
+      "options": ["It builds the app icon", "It compiles the app", "It describes how to display the widget", "It compiles Dart to JavaScript"],
+      "answer": "It describes how to display the widget"
+    },
+    {
+      "question": "What is the difference between StatelessWidget and StatefulWidget?",
+      "options": ["StatefulWidget cannot update UI", "StatelessWidget has internal state", "StatelessWidget is immutable", "StatefulWidget cannot rebuild UI"],
+      "answer": "StatelessWidget is immutable"
+    },
+    {
+      "question": "Which Flutter widget is used for user input?",
+      "options": ["Text", "TextField", "Input", "FormField"],
+      "answer": "TextField"
+    },
+    {
+      "question": "Which layout widget allows overlapping children?",
+      "options": ["Row", "Column", "Stack", "ListView"],
+      "answer": "Stack"
+    },
+    {
+      "question": "How do you specify spacing between widgets?",
+      "options": ["Margin widget", "Spacer widget", "Padding widget", "Divider"],
+      "answer": "Padding widget"
+    },
+    {
+      "question": "What does `pubspec.yaml` file contain?",
+      "options": ["Build commands", "Project metadata & dependencies", "Flutter widgets", "Routing configuration"],
+      "answer": "Project metadata & dependencies"
+    },
+    {
+      "question": "Which widget is used to create a scrollable list?",
+      "options": ["Stack", "ListView", "Column", "GridView"],
+      "answer": "ListView"
+    },
+    {
+      "question": "What is the use of `Navigator` in Flutter?",
+      "options": ["To animate widgets", "To handle routing", "To manage state", "To create widgets"],
+      "answer": "To handle routing"
+    },
+    {
+      "question": "Which command is used to create a new Flutter project?",
+      "options": ["flutter create", "flutter init", "dart new", "flutter start"],
+      "answer": "flutter create"
+    },
+    {
+      "question": "Which command runs the Flutter app?",
+      "options": ["flutter run", "flutter go", "flutter execute", "flutter build"],
+      "answer": "flutter run"
+    },
+    {
+      "question": "What is the use of `Expanded` widget?",
+      "options": ["To shrink widgets", "To expand a widget within a Row/Column", "To hide widgets", "To scroll content"],
+      "answer": "To expand a widget within a Row/Column"
+    },
+    {
+      "question": "Which widget is used to group form fields?",
+      "options": ["Container", "Column", "Form", "Scaffold"],
+      "answer": "Form"
+    }
+  ]
+  
