@@ -85,18 +85,36 @@
         .logo img {
             max-width: 180px;
         }
-
+        .user-info {
+            text-align: center;
+    margin: 14px;
+    color: black;
+    font: initial;
+}
+footer{
+    text-align: center;
+    margin-top: 37px;
+}
     </style>
 </head>
 <body>
  
-    
+<div class="form-box">
     <div class="result-container">
-        <div class="logo">
-                <img src="{{ asset('images/image.webp') }}" alt="Logo">
-        </div>
-        <h3>Quiz Result</h3>
-        <div class="score">Your Score: {{ $score }}/10</div>
+        <div class="header">
+    <div class="logo">
+        <img src="{{ asset('images/image.webp') }}" alt="Logo">
+    </div>
+   
+@if (session('username'))
+    <p><strong>Name:</strong> {{ session('username') }}</p>
+@endif
+
+@if (session('subject'))
+    <p><strong>Subject:</strong> {{ ucfirst(session('subject')) }}</p>
+@endif
+
+<div class="score">Your Score: {{ $score }}/10</div>
         
         <ol>
         @foreach ($answers as $index => $ans)
@@ -113,11 +131,18 @@
             </li>
         @endforeach
     </ol>
-
-    <div style="text-align: center;">
+    <div style="text-align: center; margin-top: 20px;">
+    <a href="/certificate" class="button">🎓 View Certificate</a>
+   
         <a href="/subject" class="button">Take Another Quiz</a>
     </div>
 </div>
-
+</div>
+<footer>
+    <hr>
+    <div class="footer-note">
+      Powered by <strong>Phoneo</strong> | www.phoneo.in
+    </div>
+</footer>
 </body>
 </html>

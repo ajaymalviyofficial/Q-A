@@ -81,19 +81,28 @@
         .logo img {
             max-width: 180px;
         }
+        footer{
+    text-align: center;
+    margin-top: 37px;
+}
 
     </style>
 </head>
 <body>
-
-
-    
-    
     <div class="quiz-container">
-        <div class="logo">
-                <img src="{{ asset('images/image.webp') }}" alt="Logo">
+    <div class="header">
+    <div class="logo">
+        <img src="{{ asset('images/image.webp') }}" alt="Logo">
+    </div>
+    @if (session('username'))
+        <div class="user-info">
+            👤 {{ session('username') }} 
+            @if(session('subject')) | 📚 Subject: {{ ucfirst(session('subject')) }} @endif
         </div>
-        <div id="timer">60s</div>
+    @endif
+    </div>
+
+        <div id="timer">30s</div>
 
         <form method="POST" action="/answer">
             @csrf
@@ -112,7 +121,7 @@
     </div>
 
     <script>
-        let time = 60;
+        let time = 30;
         let timer = setInterval(function () {
             time--;
             document.getElementById('timer').innerText = time + 's';
@@ -122,6 +131,10 @@
             }
         }, 1000);
     </script>
-
+<footer>
+    <div class="footer-note">
+      Powered by <strong>Phoneo</strong> | www.phoneo.in
+    </div>
+</footer>
 </body>
 </html>

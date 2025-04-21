@@ -1,5 +1,6 @@
 <?php
 
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -73,6 +74,7 @@ Route::post('/answer', function (Request $request) {
 Route::get('/result', function () {
     $answers = session('answers');
     $score = 0;
+    session(['score' => $score]); // Add this
 
     foreach ($answers as $ans) {
         if ($ans['given'] === $ans['correct']) $score++;
@@ -82,4 +84,22 @@ Route::get('/result', function () {
         'answers' => $answers,
         'score' => $score
     ]);
+});
+
+Route::get('/certificate', function () {
+    $username = session('username');
+    $subject = session('subject');
+    $score = session('score', 0);
+
+    return view('certificate', compact('username', 'subject', 'score'));
+});
+
+Route::get('/certificate/download', function () {
+    $data = [
+        'username' => session('username'),
+        'subject' => session('subject'),
+        'score' => session('score', 0),
+    ];
+    $pdf = Pdf::loadView('certificate', $data);
+    return $pdf->download('Certificate.pdf');
 });

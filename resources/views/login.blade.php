@@ -10,14 +10,16 @@
             box-sizing: border-box;
         }
 
-        body {
-            background: linear-gradient(135deg,rgb(29, 215, 221),rgb(58, 175, 196));
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        .form-box {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+        body{
+            background: linear-gradient(135deg,rgb(29, 215, 221),rgb(58, 175, 196));
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .login-form {
@@ -93,10 +95,15 @@
                 transform: translateY(0);
             }
         }
+        footer{
+         text-align: center;
+        margin-top: 37px;
+        margin: 40px;
+        }
     </style>
 </head>
 <body>
-    
+<div class="form-box">
     <form method="POST" action="/login" class="login-form">
         @csrf
         <div class="logo">
@@ -107,5 +114,11 @@
         <button type="submit">Start Quiz</button>
         <p>Please enter your name to begin.</p>
     </form>
+    </div>
+    <footer>
+    <div class="footer-note"><hr>
+      Powered by <strong>Phoneo</strong> | www.phoneo.in
+    </div>
+    </footer>
 </body>
 </html>

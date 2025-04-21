@@ -63,14 +63,26 @@
         .logo img {
             max-width: 180px;
         }
+    .footer{
+         text-align: center;
+        margin-top: 37px;
+    
+        }
     </style>
 </head>
 <body>
 
     <div class="form-box">
-        <div class="logo">
-                <img src="{{ asset('images/image.webp') }}" alt="Logo">
-            </div>
+       <div class="header">
+    <div class="logo">
+        <img src="{{ asset('images/image.webp') }}" alt="Logo">
+    </div>
+   
+@if (session('username'))
+    <p><strong>Name:</strong> {{ session('username') }}</p>
+@endif
+
+    </div>
         <h2>Select a Subject</h2>
         <form method="POST" action="/start-quiz">
             @csrf
@@ -83,7 +95,11 @@
             </select>
             <button type="submit">Start Quiz</button>
         </form>
+        <div class="footer">
+          Powered by <strong>Phoneo</strong> | www.phoneo.in
+        </div>
     </div>
+  
 
 </body>
 </html>
